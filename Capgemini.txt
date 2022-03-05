@@ -1,0 +1,76 @@
+exercicio 01
+
+using System;
+using System.Linq;
+
+
+class Program {
+    static void Main(string[] args) {
+      int[] arr = {9, 2, 1, 4, 6};
+      Array.Sort(arr);
+      var quantidade = arr.Count();
+      var calc = (quantidade + 1)/2-1 ;
+      Console.Write(arr[calc]);
+    }
+}
+---------------------------------------------
+
+Exercio 2
+
+using System;
+using System.Linq;
+
+
+
+class Program
+{
+static void Main(string[] args)
+{
+int[] n = { 1, 5, 3, 4, 2 };
+Array.Sort(n);
+int x = 2;
+string resultado = "";
+int contador = 0;
+foreach (var i in n)
+{
+foreach (var p in n)
+{
+var calc = i-p;
+if(calc == x)
+{
+resultado += "{" + i + "," +p + "}";
+contador++;
+
+continue;
+}
+}
+}
+Console.Write(resultado);
+Console.Write(contador);
+
+
+}
+}
+
+---------------------------------------
+
+Exercicio 3 
+
+using System;
+using System.Linq;
+
+
+class Program {
+    static void Main(string[] args) {
+      string s = "tenha um bom dia";
+      string s2 = s.Replace(" ","");
+     
+      string linha1 = s2.Substring(0, 4); 
+      string linha2 = s2.Substring(4, 4); 
+      string linha3 = s2.Substring(8, 4); 
+      string linha4 = s2.Substring(12, 1); 
+
+      string res = linha1.Substring(0, 1) + linha2.Substring(0, 1) + linha3.Substring(0, 1) + linha4.Substring(0, 1) + " " + linha1.Substring(1, 1) + linha2.Substring(1, 1) + linha3.Substring(1, 1) + " " + linha1.Substring(2, 1) + linha2.Substring(2, 1) + linha3.Substring(2, 1) + " " + linha1.Substring(3, 1) + linha2.Substring(3, 1) + linha3.Substring(3, 1);
+      
+       Console.Write(res);
+-----------------------------------------------------
